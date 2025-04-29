@@ -43,4 +43,6 @@ public class player_movement : MonoBehaviour
         horizVel = 0;
         controlLock = false;
     }
+
+
 }
