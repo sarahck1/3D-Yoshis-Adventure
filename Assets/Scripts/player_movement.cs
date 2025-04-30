@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class player_movement : MonoBehaviour
 {
@@ -11,10 +12,15 @@ public class player_movement : MonoBehaviour
     public int minLane = 1;
     public int maxLane = 3;
     public bool controlLock = false;
+
+    // coin generator code
+    public static int numberofCoins;
+    public Text coinsText;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-     
+        numberofCoins = 0;
     }
 
     // Update is called once per frame
@@ -36,6 +42,8 @@ public class player_movement : MonoBehaviour
                 laneNum += 1;
                 controlLock = true;
             }
+
+            coinsText.text = "Coins: " + numberofCoins;
     }
     IEnumerator stopSlide()
     {
