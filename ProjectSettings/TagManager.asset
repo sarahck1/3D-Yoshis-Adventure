@@ -6,6 +6,8 @@ TagManager:
   tags:
   - lethal
   - Coin
+  - Ground
+  - brick
   layers:
   - Default
   - TransparentFX

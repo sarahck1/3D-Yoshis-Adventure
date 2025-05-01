@@ -127,13 +127,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1478409551}
     m_Modifications:
+    - target: {fileID: 191668872345598057, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 490397567104094420, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Center.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 736424229919544196, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083555664911363426, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Name
       value: platform (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162609103189960696, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -175,6 +195,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3399574969060947731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054076192488445480, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830138849052114031, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053956120636673708, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6613099746054826601, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534147690153058222, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152869524150974778, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170888437465869099, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264333215404622516, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8352712769124418084, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188,13 +248,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1478409551}
     m_Modifications:
+    - target: {fileID: 191668872345598057, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 490397567104094420, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Center.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 736424229919544196, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083555664911363426, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Name
       value: platform (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162609103189960696, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -236,6 +316,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3399574969060947731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054076192488445480, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830138849052114031, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053956120636673708, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6613099746054826601, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534147690153058222, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152869524150974778, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170888437465869099, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264333215404622516, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -254,13 +370,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1478409551}
     m_Modifications:
+    - target: {fileID: 191668872345598057, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 490397567104094420, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Center.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 736424229919544196, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083555664911363426, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Name
       value: platform (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162609103189960696, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -301,6 +437,46 @@ PrefabInstance:
     - target: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399574969060947731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054076192488445480, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830138849052114031, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053956120636673708, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6613099746054826601, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534147690153058222, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152869524150974778, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170888437465869099, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264333215404622516, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8352712769124418084, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -448,12 +624,12 @@ Rigidbody:
     serializedVersion: 2
     m_Bits: 0
   m_ImplicitCom: 1
-  m_ImplicitTensor: 1
+  m_ImplicitTensor: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 112
+  m_CollisionDetection: 1
 --- !u!135 &454648385
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -661,9 +837,10 @@ GameObject:
   - component: {fileID: 1100934084}
   - component: {fileID: 1100934085}
   - component: {fileID: 1100934086}
+  - component: {fileID: 1100934087}
   m_Layer: 0
   m_Name: gameManager
-  m_TagString: lethal
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -721,6 +898,23 @@ MonoBehaviour:
   coinGroupChance: 70
   singleLaneChance: 60
   doubleLaneChance: 30
+--- !u!114 &1100934087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100934082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b91d86839c741349df18f6f005d4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brickPrefab: {fileID: 544679733679445161, guid: 1aa321b564e7149d280d2d67a71d0a8a, type: 3}
+  spawnInterval: 2
+  spawnZDistance: 30
+  yPosition: 1
+  playerTransform: {fileID: 454648388}
 --- !u!4 &1118709723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
@@ -878,13 +1072,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1478409551}
     m_Modifications:
+    - target: {fileID: 191668872345598057, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 490397567104094420, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Center.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 736424229919544196, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083555664911363426, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Name
       value: platform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162609103189960696, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -925,6 +1139,46 @@ PrefabInstance:
     - target: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399574969060947731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054076192488445480, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830138849052114031, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053956120636673708, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6613099746054826601, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534147690153058222, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152869524150974778, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170888437465869099, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264333215404622516, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8352712769124418084, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1023,13 +1277,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1478409551}
     m_Modifications:
+    - target: {fileID: 191668872345598057, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 490397567104094420, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Center.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 736424229919544196, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083555664911363426, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Name
       value: platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162609103189960696, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1070,6 +1344,38 @@ PrefabInstance:
     - target: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399574969060947731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054076192488445480, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830138849052114031, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053956120636673708, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6613099746054826601, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534147690153058222, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152869524150974778, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170888437465869099, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1217,13 +1523,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1478409551}
     m_Modifications:
+    - target: {fileID: 191668872345598057, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 490397567104094420, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Center.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 736424229919544196, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083555664911363426, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_Name
       value: platform (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794937596329516731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162609103189960696, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1264,6 +1590,46 @@ PrefabInstance:
     - target: {fileID: 2989270653267726000, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399574969060947731, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054076192488445480, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830138849052114031, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053956120636673708, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 6613099746054826601, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534147690153058222, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152869524150974778, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170888437465869099, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264333215404622516, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8352712769124418084, guid: 844a2347d74bd47c9943cb2e55c33d6e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

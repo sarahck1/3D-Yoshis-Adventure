@@ -48,7 +48,7 @@ public class objectSpawner : MonoBehaviour
     }
 }
 
-public class FruitCollisionHandler : MonoBehaviour
+public class FruitCollisionHandlers : MonoBehaviour
 {
     // This will handle when the fruit collides with the player
     void OnCollisionEnter(Collision collision)
