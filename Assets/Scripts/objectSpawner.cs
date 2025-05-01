@@ -17,7 +17,7 @@ public class objectSpawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(15);
 
             // Random X position, fixed Y = 1
             randX = Random.Range(-1, 2); // -1, 0, or 1
@@ -26,19 +26,38 @@ public class objectSpawner : MonoBehaviour
             // Randomly choose between grape (0) and apple (1)
             int randomFruit = Random.Range(0, 2);
 
+            Transform fruit = null;
+
             if (randomFruit == 0)
             {
                 // Spawn grape with no rotation
-                Instantiate(grapeObj, nextFruitSpawn, Quaternion.identity);
+                fruit = Instantiate(grapeObj, nextFruitSpawn, Quaternion.identity);
                 Debug.Log("Spawned Grape at " + nextFruitSpawn);
             }
             else
             {
                 // Rotate apple 90 degrees on X axis
                 Quaternion appleRotation = Quaternion.Euler(90, 0, 0);
-                Instantiate(appleObj, nextFruitSpawn, appleRotation);
+                fruit = Instantiate(appleObj, nextFruitSpawn, appleRotation);
                 Debug.Log("Spawned Apple at " + nextFruitSpawn + " with rotation 90° X");
             }
+
+            // Attach a script to handle the collision
+            fruit.gameObject.AddComponent<FruitCollisionHandler>();
+        }
+    }
+}
+
+public class FruitCollisionHandler : MonoBehaviour
+{
+    // This will handle when the fruit collides with the player
+    void OnCollisionEnter(Collision collision)
+    {
+        // Check if the object colliding is the player
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            Debug.Log("Fruit Destroyed by Player");
         }
     }
 }
