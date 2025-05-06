@@ -14,6 +14,7 @@ public class CoinSpawner : MonoBehaviour
     public int maxCoinsPerRow = 2;
     public float minGapBetweenGroups = 5f;
     public float maxGapBetweenGroups = 10f;
+    float horizontalOffset = 0.3f;
 
     [Header("Appearance")]
     [Range(0, 100)] public int coinGroupChance = 70;
@@ -91,7 +92,7 @@ public class CoinSpawner : MonoBehaviour
     void SpawnCoin(int lane, float zPos)
     {
         Vector3 spawnPos = new Vector3(
-            lane * laneWidth,
+            (lane * laneWidth) + horizontalOffset,
             player.position.y,
             zPos
         );
