@@ -32,47 +32,48 @@ public class tileSpawner : MonoBehaviour
     }
 
     void SpawnFruitOnTile(Vector3 tilePosition)
+{
+    // Only spawn a fruit 15% of the time 
+    if (Random.value > 0.15f) return;
+
+    int[] validLanes = { -1, 0, 1 };
+    int laneX = validLanes[Random.Range(0, validLanes.Length)];
+
+    Vector3 fruitSpawn = new Vector3(laneX, 3, tilePosition.z);
+
+    int randomFruit = Random.Range(0, 2); // 0 = grape, 1 = apple
+    Transform fruit;
+
+    if (randomFruit == 0)
     {
-        int[] validLanes = { -1, 0, 1 };
-        int laneX = validLanes[Random.Range(0, validLanes.Length)];
-
-        Vector3 fruitSpawn = new Vector3(laneX, 3, tilePosition.z);
-
-        int randomFruit = Random.Range(0, 2); // 0 = grape, 1 = apple
-        Transform fruit;
-
-        if (randomFruit == 0)
-        {
-            fruit = Instantiate(grapeObj, fruitSpawn, Quaternion.identity);
-        }
-        else
-        {
-            Vector3 appleSpawn = new Vector3(laneX, 0.4f, tilePosition.z);
-            Quaternion appleRotation = Quaternion.Euler(-90, 0, 0);
-            fruit = Instantiate(appleObj, appleSpawn, appleRotation);
-        }
-
-        if (fruit != null)
-        {
-            // Add a trigger collider if none exists
-            Collider col = fruit.GetComponent<Collider>();
-            if (col == null)
-                col = fruit.gameObject.AddComponent<BoxCollider>();
-
-            col.isTrigger = true; 
-
-            // Add rigidbody for physics detection
-            if (fruit.GetComponent<Rigidbody>() == null)
-            {
-                Rigidbody rb = fruit.gameObject.AddComponent<Rigidbody>();
-                rb.useGravity = false;
-                rb.isKinematic = true;
-            }
-
-            // Add collision handling
-            fruit.gameObject.AddComponent<FruitCollisionHandler>();
-        }
+        fruit = Instantiate(grapeObj, fruitSpawn, Quaternion.identity);
     }
+    else
+    {
+        Vector3 appleSpawn = new Vector3(laneX, 0.4f, tilePosition.z);
+        Quaternion appleRotation = Quaternion.Euler(-90, 0, 0);
+        fruit = Instantiate(appleObj, appleSpawn, appleRotation);
+    }
+
+    if (fruit != null)
+    {
+        Collider col = fruit.GetComponent<Collider>();
+        if (col == null)
+            col = fruit.gameObject.AddComponent<BoxCollider>();
+
+        col.isTrigger = true;
+
+        if (fruit.GetComponent<Rigidbody>() == null)
+        {
+            Rigidbody rb = fruit.gameObject.AddComponent<Rigidbody>();
+            rb.useGravity = false;
+            rb.isKinematic = true;
+        }
+
+        fruit.gameObject.AddComponent<FruitCollisionHandler>();
+    }
+}
+
 }
 
 // Embedded collision handling script
