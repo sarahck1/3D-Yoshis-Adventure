@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class player_movement : MonoBehaviour
 {
@@ -17,6 +19,9 @@ public class player_movement : MonoBehaviour
     public static int numberofCoins;
     public Text coinsText;
 
+    // Game Over
+    public GameObject gameOverUI;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,7 +31,7 @@ public class player_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            GetComponent<Rigidbody>().linearVelocity = new Vector3 (horizVel,0,4);
+            GetComponent<Rigidbody>().linearVelocity = new Vector3 (horizVel,0,4.15f);
        
             if((Input.GetKeyDown(moveL)) && (laneNum > minLane)&& (controlLock == false))
             {
@@ -50,6 +55,15 @@ public class player_movement : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         horizVel = 0;
         controlLock = false;
+    }
+
+    //Collision detector for bricks
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("brick"))
+        {
+            Object.FindFirstObjectByType<GameManager>().GameOver();
+        }
     }
 
 

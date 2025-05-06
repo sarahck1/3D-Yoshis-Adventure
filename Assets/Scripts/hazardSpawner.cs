@@ -10,7 +10,7 @@ public class BrickSpawner : MonoBehaviour
     public float yPosition = 1; 
     public Transform playerTransform;
 
-    private float[] laneX = new float[] { -1, 0, 2 }; // Lanes 1-3
+    private float[] laneX = new float[] { -1, 0, 1 }; // Lanes 1-3
 
     void Start()
     {
