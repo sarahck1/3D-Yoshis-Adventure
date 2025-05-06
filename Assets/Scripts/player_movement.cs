@@ -74,20 +74,32 @@ public class player_movement : MonoBehaviour
         Object.FindFirstObjectByType<GameManager>().GameOver();
     }
 
-    //enemy
-    if (collision.gameObject.CompareTag("lethal"))
-    {
-        
-        Object.FindFirstObjectByType<playerHealth>().TakeDamage(1);
-    }
-
-
 
     if (collision.contacts[0].normal.y > 0.5f)
     {
         isGrounded = true;
     }
 }
+
+void OnTriggerEnter(Collider other)
+{
+    if (other.CompareTag("lethal"))
+    {
+       
+        if (!Object.FindFirstObjectByType<playerHealth>().isInvincible)
+        {
+           
+            Object.FindFirstObjectByType<playerHealth>().TakeDamage(1);
+        }
+
+        Destroy(other.gameObject); 
+
+        //iframes
+        StartCoroutine(Object.FindFirstObjectByType<playerHealth>().TemporaryInvincibility(1f));
+    }
+}
+
+
 
 
 }
