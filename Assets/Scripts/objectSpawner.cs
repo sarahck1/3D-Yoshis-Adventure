@@ -32,17 +32,16 @@ public class objectSpawner : MonoBehaviour
             {
                 // Spawn grape with no rotation
                 fruit = Instantiate(grapeObj, nextFruitSpawn, Quaternion.identity);
-                Debug.Log("Spawned Grape at " + nextFruitSpawn);
+               
             }
             else
             {
                 // Rotate apple 90 degrees on X axis
                 Quaternion appleRotation = Quaternion.Euler(90, 0, 0);
                 fruit = Instantiate(appleObj, nextFruitSpawn, appleRotation);
-                Debug.Log("Spawned Apple at " + nextFruitSpawn + " with rotation 90° X");
+               
             }
 
-            // Attach a script to handle the collision
             fruit.gameObject.AddComponent<FruitCollisionHandler>();
         }
     }
@@ -57,7 +56,6 @@ public class FruitCollisionHandlers : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            Debug.Log("Fruit Destroyed by Player");
         }
     }
 }

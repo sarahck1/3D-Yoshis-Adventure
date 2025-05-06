@@ -3,68 +3,91 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
 public class player_movement : MonoBehaviour
 {
     public KeyCode moveL;
     public KeyCode moveR;
+    public KeyCode jumpKey = KeyCode.Space;
 
-    public float horizVel = 0; 
+    public float horizVel = 0;
+    public float jumpForce = 5.5f;
     public int laneNum = 2;
     public int minLane = 1;
     public int maxLane = 3;
     public bool controlLock = false;
+    public bool isGrounded = true;
 
-    // coin generator code
     public static int numberofCoins;
     public Text coinsText;
 
-    // Game Over
     public GameObject gameOverUI;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Rigidbody rb;
+
     void Start()
     {
         numberofCoins = 0;
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-            GetComponent<Rigidbody>().linearVelocity = new Vector3 (horizVel,0,4.15f);
-       
-            if((Input.GetKeyDown(moveL)) && (laneNum > minLane)&& (controlLock == false))
-            {
-                horizVel = -2;
-                StartCoroutine(stopSlide());
-                laneNum -= 1;
-                controlLock = true;
-            }
-             if((Input.GetKeyDown(moveR)) && (laneNum < maxLane) && (controlLock == false))
-            {
-                horizVel = 2;
-                StartCoroutine(stopSlide());
-                laneNum += 1;
-                controlLock = true;
-            }
+        rb.linearVelocity = new Vector3(horizVel, rb.linearVelocity.y, 4.15f);
 
-            coinsText.text = "Coins: " + numberofCoins;
+        if ((Input.GetKeyDown(moveL)) && (laneNum > minLane) && !controlLock)
+        {
+            horizVel = -2;
+            StartCoroutine(stopSlide());
+            laneNum -= 1;
+            controlLock = true;
+        }
+        if ((Input.GetKeyDown(moveR)) && (laneNum < maxLane) && !controlLock)
+        {
+            horizVel = 2;
+            StartCoroutine(stopSlide());
+            laneNum += 1;
+            controlLock = true;
+        }
+
+        if (Input.GetKeyDown(jumpKey) && isGrounded)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
+        }
+
+        coinsText.text = "Coins: " + numberofCoins;
     }
+
     IEnumerator stopSlide()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(0.5f);
         horizVel = 0;
         controlLock = false;
     }
 
-    //Collision detector for bricks
     void OnCollisionEnter(Collision collision)
+{
+
+
+    if (collision.gameObject.CompareTag("brick"))
     {
-        if (collision.gameObject.CompareTag("brick"))
-        {
-            Object.FindFirstObjectByType<GameManager>().GameOver();
-        }
+        Object.FindFirstObjectByType<GameManager>().GameOver();
     }
+
+    //enemy
+    if (collision.gameObject.CompareTag("lethal"))
+    {
+        
+        Object.FindFirstObjectByType<playerHealth>().TakeDamage(1);
+    }
+
+
+
+    if (collision.contacts[0].normal.y > 0.5f)
+    {
+        isGrounded = true;
+    }
+}
 
 
 }

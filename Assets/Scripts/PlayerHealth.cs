@@ -18,7 +18,7 @@ public class playerHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            Debug.Log("Game Over");
+            Object.FindFirstObjectByType<GameManager>().GameOver();
             
         }
     }
