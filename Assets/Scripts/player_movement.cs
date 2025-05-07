@@ -24,6 +24,9 @@ public class player_movement : MonoBehaviour
 
     private Rigidbody rb;
 
+    public float laneWidth = 2.5f;
+    
+
     void Start()
     {
         numberofCoins = 0;
@@ -36,14 +39,14 @@ public class player_movement : MonoBehaviour
 
         if ((Input.GetKeyDown(moveL)) && (laneNum > minLane) && !controlLock)
         {
-            horizVel = -2;
+            horizVel = -laneWidth;
             StartCoroutine(stopSlide());
             laneNum -= 1;
             controlLock = true;
         }
         if ((Input.GetKeyDown(moveR)) && (laneNum < maxLane) && !controlLock)
         {
-            horizVel = 2;
+            horizVel = laneWidth;
             StartCoroutine(stopSlide());
             laneNum += 1;
             controlLock = true;

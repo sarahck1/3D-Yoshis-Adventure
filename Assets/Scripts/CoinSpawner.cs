@@ -21,6 +21,11 @@ public class CoinSpawner : MonoBehaviour
     [Range(0, 100)] public int singleLaneChance = 60;
     [Range(0, 100)] public int doubleLaneChance = 30;
 
+    [Header("Arc")]
+    public bool allowArcs = true;
+    public float arcHeight = 2.5f;
+    public int arcCoinCount = 6;
+
     private float nextSpawn;
     private float nextGapLength;
 
@@ -77,15 +82,23 @@ public class CoinSpawner : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i < rowsInGroup; i++)
+            if (allowArcs && Random.value < 1.0f)
             {
-                if (Random.value > 0.4f) SpawnCoin(-1, nextSpawn + (i * 2f)); 
-                if (Random.value > 0.4f) SpawnCoin(0, nextSpawn + (i * 2f)); 
-                if (Random.value > 0.4f) SpawnCoin(1, nextSpawn + (i * 2f));  
+                int lane = Random.Range(-1, 2);
+                SpawnCoinArc(lane, nextSpawn);
+                nextSpawn += spawnInterval;
+            }
+            else
+            {
+                for (int i = 0; i < rowsInGroup; i++)
+                {
+                    if (Random.value > 0.4f) SpawnCoin(-1, nextSpawn + (i * 2f));
+                    if (Random.value > 0.4f) SpawnCoin(0, nextSpawn + (i * 2f));
+                    if (Random.value > 0.4f) SpawnCoin(1, nextSpawn + (i * 2f));
+                }
+                nextSpawn += rowsInGroup * 2f;
             }
         }
-
-        nextSpawn += rowsInGroup * 2f;
         CalculateNextGap();
     }
 
@@ -103,5 +116,19 @@ public class CoinSpawner : MonoBehaviour
     {
         nextGapLength = Random.Range(minGapBetweenGroups, maxGapBetweenGroups);
         nextSpawn += nextGapLength;
+    }
+
+    //Spawn coins in an arc shape
+
+        void SpawnCoinArc(int lane, float startZ)
+    {
+        for (int i = 0; i < arcCoinCount; i++)
+        {
+            float t = i / (float)(arcCoinCount - 1); 
+            float zPos = startZ + t * 5f; 
+            float yPos = Mathf.Sin(t * Mathf.PI) * arcHeight + player.position.y; // sine wave
+            Vector3 spawnPos = new Vector3((lane * laneWidth) + horizontalOffset, yPos, zPos);
+            Instantiate(coinPrefab, spawnPos, Quaternion.identity);
+        }
     }
 }
