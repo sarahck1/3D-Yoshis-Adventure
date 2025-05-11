@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class GameManager : MonoBehaviour
 {
     public GameObject gameOverUI;
     public Button tryAgainButton;
-
+   
+public TextMeshProUGUI highScoreText;
     private bool isGameOver = false;
 
     void Start()
@@ -26,7 +29,20 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         Time.timeScale = 0f; // Pause the game when the game is over
         gameOverUI.SetActive(true);
+        int currentScore = player_movement.numberofCoins;
+        int savedHighScore = PlayerPrefs.GetInt("HighScore", 0);
+
+        // Check and update if new high score
+        if (currentScore > savedHighScore)
+        {
+            PlayerPrefs.SetInt("HighScore", currentScore);
+            PlayerPrefs.Save();
+        }
+
+        // Update text
+        highScoreText.text = "High Score: " + PlayerPrefs.GetInt("HighScore");
     }
+        
 
     public void RestartGame()
     {

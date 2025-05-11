@@ -31,6 +31,9 @@ public class player_movement : MonoBehaviour
     {
         numberofCoins = 0;
         rb = GetComponent<Rigidbody>();
+
+        int savedHighScore = PlayerPrefs.GetInt("HighScore", 0);
+   
     }
 
     void Update()
@@ -59,6 +62,13 @@ public class player_movement : MonoBehaviour
         }
 
         coinsText.text = "Coins: " + numberofCoins;
+
+        int savedHighScore = PlayerPrefs.GetInt("HighScore", 0);
+    if (numberofCoins > savedHighScore)
+    {
+        PlayerPrefs.SetInt("HighScore", numberofCoins);
+        PlayerPrefs.Save();
+    }
     }
 
     IEnumerator stopSlide()
