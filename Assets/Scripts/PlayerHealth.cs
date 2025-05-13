@@ -7,6 +7,7 @@ public class playerHealth : MonoBehaviour
     public int health = 3;
     public Text healthText;
     private float grapeInvincibilityTimer = 0f;
+    public Text grapeInvincibilityText;
 
     public GameObject player;  // Reference to the Player object
     private Renderer rend;
@@ -88,15 +89,23 @@ public class playerHealth : MonoBehaviour
     {
         grapeInvincibilityTimer -= Time.deltaTime;
 
+        // update the countdown text
+        if (grapeInvincibilityText != null)
+            grapeInvincibilityText.text = "Invincible: " + Mathf.CeilToInt(grapeInvincibilityTimer) + "s";
+
         if (grapeInvincibilityTimer <= 0)
         {
             isGrapeInvincible = false;
-            Debug.Log("Grape Invincibility Ended");
+            //Debug.Log("Grape Invincibility Ended");
 
             if (rend != null)
                 rend.material.color = originalColor;
+
+            if (grapeInvincibilityText != null)
+                grapeInvincibilityText.text = "";  // Clear the text
         }
     }
 }
+
 
 }
